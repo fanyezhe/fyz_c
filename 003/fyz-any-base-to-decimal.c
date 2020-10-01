@@ -10,7 +10,7 @@ static int binary_to_decimal(const char s[], int *p){
 
 	for (*p = 0; '\0' != *s; ++s){ // 初始化*p, 循环处理s 
 
-		if ('0' != *s && '1' != *s){ // 参数检测
+		if ('0' > *s || '1' < *s){ // 参数检测
 			return -1; // 失败返回
 		}
 		
