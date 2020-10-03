@@ -17,11 +17,11 @@ int main(int argc, char *argv[]){
 		// 转换为数值, 每次处理两个参数
 		a = atoi(argv[1]), b = atoi(argv[2]);
 		
-		// 若成功, 则输出a的平方+b的平方
+		// 若成功, 则输出(a)的平方+(b)的平方
 		if (0 == fyz_square_plus_square(a, b, &c)){
 			printf("%d * %d + %d * %d = %d\n", a, a, b, b, c);
 
-		}else { // 若失败, 则输出a+b
+		}else { // 若失败, 则输出(a)+(b)
 			printf("%d + %d = %d\n", a, b, c);
 		}
 	}

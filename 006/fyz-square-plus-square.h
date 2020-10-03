@@ -11,7 +11,7 @@
 // 参数: (a)操作数
 // 参数: (b)操作数
 // 参数: (c)指向用于存储(a)与(b)运算结果的内存
-// 返回: 成功0, 失败-1
+// 返回: 若(*c)=(a)*(a)+(b)*(b)大于100返回0, 否则(*c)=(a)+(b)返回-1
 extern int fyz_square_plus_square(int a, int b, int *c);
 
 #endif // FYZ_SQUARE_PLUS_SQUARE_H
