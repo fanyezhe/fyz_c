@@ -15,19 +15,27 @@
 
 int main(int argc, char *argv[]){
 
-	for (int i = 0, j, k; NULL != *++argv; ){
+	for (int i = 0, j; NULL != *++argv; ){ // 循环处理输入参数
 
-		j = atoi(*argv); k = 0;
+		printf("the number of stairs starts from %s.\n", *argv);
 
-		while (i = fyz_ladder_problem(i + 1, j)){	
+		j = atoi(*argv); // 字符串转换为数值
+
+		if (i = fyz_ladder_problem(i, j)) { // 若符合阶梯数
+
+			// 打印第一次符合的阶梯数
 			printf("the number of the stairs is %d.\n", i);
-			k = 1;
-		}
 
-		if (0 == k){
+			// 查找并打印所有符合的阶梯数
+			while (i = fyz_ladder_problem(i + 1, j)) {
+				printf("the number of the stairs is %d.\n", i);
+			}
+
+		}else { // 否则不符号阶梯数
 			printf("the number of stairs %d does not meet the requirements.\n", j);
 		}
 
+		putchar('\n');
 	}
 
 	return 0;
